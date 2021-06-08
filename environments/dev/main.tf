@@ -25,7 +25,7 @@ module "instance_template" {
   source     = "../../modules/instance_template"
   region     = var.region
   project_id = var.project_id
-  subnetwork = var.subnetwork
+  subnetwork = "default"
   service_account = {
     email  = "135833141613-compute@developer.gserviceaccount.com"
     scopes = ["cloud-platform"]
