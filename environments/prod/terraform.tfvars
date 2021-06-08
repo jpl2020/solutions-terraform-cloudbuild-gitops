@@ -1,1 +1,2 @@
-project="dceng-testing-ncr"
+project       = "dceng-testing-ncr"
+num_instances = 1
