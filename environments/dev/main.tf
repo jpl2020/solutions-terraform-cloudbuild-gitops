@@ -26,6 +26,7 @@ module "instance_template" {
   region     = var.region
   project_id = var.project_id
   subnetwork = "default"
+  subnetwork_project   = "dceng-testing-ncr"
   service_account = {
     email  = "135833141613-compute@developer.gserviceaccount.com"
     scopes = ["cloud-platform"]
