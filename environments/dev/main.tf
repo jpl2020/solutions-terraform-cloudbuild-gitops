@@ -23,14 +23,14 @@ provider "google" {
 
 module "instance_template" {
   source     = "../../modules/instance_template"
-  region     = var.region
   project_id = var.project_id
+  region     = var.region
   subnetwork = "ncr-prod-us-west2-subnet-private-test"
-  subnetwork_project   = "dceng-testing-ncr"
   service_account = {
     email  = "135833141613-compute@developer.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
+  subnetwork_project   = "dceng-testing-ncr"
 }
 
 module "compute_instance" {
