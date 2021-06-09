@@ -1,4 +1,2 @@
 num_instances   = 1
-project_id      = "dceng-testing-ncr"
-subnetwork  = "ncr-prod-us-west2-subnet-private-test"
-region  =   "us-central1"
+subnetwork_project  =   "dceng-testing-ncr"
