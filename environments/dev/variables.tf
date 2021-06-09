@@ -19,6 +19,7 @@
 variable "project_id" {
   description = "The GCP project to use for integration tests"
   type        = string
+  default     = "dceng-testing-ncr"
 }
 
 variable "region" {
@@ -35,6 +36,8 @@ variable "zone" {
 
 variable "subnetwork" {
   description = "The subnetwork selflink to host the compute instances in"
+  type        = string
+  default     = "ncr-prod-us-west2-subnet-private-test"
 }
 
 variable "num_instances" {
@@ -51,6 +54,10 @@ variable "network_tier" {
   default     = "PREMIUM"
 }
 
+variable "subnetwork_project" {
+  description = "sub project"
+  default     = "dceng-testing-ncr"
+}
 
 variable "service_account" {
   default = null
