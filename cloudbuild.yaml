@@ -68,7 +68,7 @@ steps:
           echo "*************** TERRAFOM PLAN ******************"
           echo "******* At environment: ${env} ********"
           echo "*************************************************"
-          terraform plan || exit 1
+          'terraform plan -no-color > plan.txt'
           cd ../../
         done
       fi 
