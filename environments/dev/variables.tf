@@ -15,4 +15,5 @@
 variable "project" {
   description = "Project"
   type        = string
+  default     = "dceng-testing-ncr"
 }
