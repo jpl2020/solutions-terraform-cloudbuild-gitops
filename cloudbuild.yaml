@@ -25,7 +25,11 @@ steps:
       echo "***********************"
 
 - id: 'tf init'
+<<<<<<< HEAD
   name: 'hashicorp/terraform:0.15.3'
+=======
+  name: 'hashicorp/terraform:1.0.0'
+>>>>>>> e6bcec81715f52a9a9c7f547926fe4a05c102268
   entrypoint: 'sh'
   args: 
   - '-c'
@@ -50,7 +54,11 @@ steps:
 
 # [START tf-plan]
 - id: 'tf plan'
+<<<<<<< HEAD
   name: 'hashicorp/terraform:0.15.3'
+=======
+  name: 'hashicorp/terraform:1.0.0'
+>>>>>>> e6bcec81715f52a9a9c7f547926fe4a05c102268
   entrypoint: 'sh'
   args: 
   - '-c'
@@ -76,7 +84,11 @@ steps:
 
 # [START tf-apply]
 - id: 'tf apply'
+<<<<<<< HEAD
   name: 'hashicorp/terraform:0.15.3'
+=======
+  name: 'hashicorp/terraform:1.0.0'
+>>>>>>> e6bcec81715f52a9a9c7f547926fe4a05c102268
   entrypoint: 'sh'
   args: 
   - '-c'
