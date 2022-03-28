@@ -14,5 +14,9 @@
 
 
 terraform {
+<<<<<<< HEAD
   required_version = "~> 0.15.3"
+=======
+  required_version = "~> 1.0.0"
+>>>>>>> e6bcec81715f52a9a9c7f547926fe4a05c102268
 }
